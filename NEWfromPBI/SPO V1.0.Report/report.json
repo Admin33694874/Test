@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "932d9e14d3a7b47de5b2",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"fed0bcd747e26ee0691b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":769.8138997303138,\"height\":524.1870048074508,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Documents.Id\"},{\"queryRef\":\"Documents.ContentTypeId\"},{\"queryRef\":\"Documents.ComplianceAssetId\"},{\"queryRef\":\"Documents.CheckoutUserId\"},{\"queryRef\":\"Documents.Modified\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Documents\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Id\"},\"Name\":\"Documents.Id\",\"NativeReferenceName\":\"Id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ContentTypeId\"},\"Name\":\"Documents.ContentTypeId\",\"NativeReferenceName\":\"ContentTypeId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ComplianceAssetId\"},\"Name\":\"Documents.ComplianceAssetId\",\"NativeReferenceName\":\"ComplianceAssetId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CheckoutUserId\"},\"Name\":\"Documents.CheckoutUserId\",\"NativeReferenceName\":\"CheckoutUserId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Modified\"},\"Name\":\"Documents.Modified\",\"NativeReferenceName\":\"Modified\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 524.19,
+          "width": 769.81,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

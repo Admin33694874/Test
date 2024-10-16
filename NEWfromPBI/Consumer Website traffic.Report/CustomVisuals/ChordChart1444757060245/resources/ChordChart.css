@@ -1,0 +1,17 @@
+/** Your CSS code goes here */
+.chordChart {
+  font: 12px sans-serif; 
+}
+
+.chordChart path.chord{
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.chordChart polyline {
+    stroke-width: 1px;
+    fill: rgba(0, 0, 0, 0.00);
+}
+
+.visual-icon.ChordChart1444757060245{ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAotJREFUeNq0VEtPE1EUvjN32ukw0xamPGOLTYTiCxIRjKisxI2PEDRuWLlw4Y7EhXFlTExYuDEuXPoTXOrKjaAxIkQhCPI0FFpoKS3Tec+dueMtbZpO4itGTyY33zlzvnO+e27upVzXBX9r1L8nv9x8/Wj2SdUdaO4bahu8Ehv6FRnZW+ndez4mqrB3xmefNgZEEszou0k1ZTrWKfHk4/4HQR9fzWeqyMHF9dRVjBWe8x8RxNuJ0ZxZKP8yHPNdZuqbnPxp543tUc2YCgvX6wK9kK434Zm32ana1N5I9xdJWCwad4+2lCN0pba1SD6eu0CYByr2Q1BqZBuqTOyCpOZbko1l2XifUzzkAIx2xN6EheFqtmkt9UZ6fFRlX1kzWES4u54jeCavechg+hxcexiyI9CQXatYbs7SZrd4jOAC4hCGBPhpOlrnn5d0L7mkzKKsLI85urgMch+BvI60uXb+UCsXVxBbOguMyNrghz+YdqUYFcBqe35vwTZlBu7x/I7NnxCoOplWJUsWa6bgJVs7ZMlvKZrEmjLrOAqiNMfey0kTDYE4w0Z1bbMj3NYVEy+12t6jWrgF1HkQGwM0dzBbI5v5YBqsjAZW1Tx07U5GZIQ+jHD603bXxUTb8daazk0jQJ4h2wahs4AJ0/7mYCjOORmKuhaR9MM6wjtJCqPU14KUlpCOvLKbhgHf5aIw3lqFic7SYH1x17WAC3qahLAP2tH61Fx6d20l2Cy0n45VWG6Nac9uqOPnrYnnWJeJa1rruu0QQNxScD+9MZ1U82o133MxXEMxX9zHyc8Ew85BuqUkAWdWnJXJksj+m/6hsd9cSXvulbM8WSaUjRSCiUGm5/L/fwz+0L4LMADQIFyy28O83wAAAABJRU5ErkJggg==);}

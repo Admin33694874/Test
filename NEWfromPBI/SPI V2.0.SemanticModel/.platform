@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SPI V2.0"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b5c22c31-a20a-44a2-902d-9e52521be875"
+  }
+}

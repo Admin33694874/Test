@@ -1,0 +1,3553 @@
+{
+  "compatibilityLevel": 1400,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ],
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "36ecd768-f6ba-4289-955d-45f1c722eccb",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=DimDate;Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS/vu3HLHAQAAvwMAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAHVS0WrbMBR9D+QfhPpig2cojD2s5GGzWxZK12xJW0YchhrfNG5kqUjXbULIv/fKUly6uXqRfY7OveceycISK63Y1O+nZ8PBcGDXwkDJ8qrOBQIbMQk4HDBaU92YpUPOt0uQ6Z02m3utN9FFJSHNtEJQaCOefS1uLBhbPH961KIsqyLXL0rSpy3Gyj5VBtjk+7iY6BcwtOcELJFdCbMBrNRDupV2y+OEqUbKhKFpIE68g2Dq73QNgGTEO9rPxwj1iAeWJ5eVKke8PcQXhzmBYhEqnPCJ0bVGmvAHiJJscqozE/c0QmACHr1rFnf6bC3UA8lnuyd4086MUHalTZ1p2dTKkTbqaZbs99xVvYQdT9hY4ZfPqTt8SJgnboVsaASGBLKSgMDsrldXFPG6T0XcHxDmf6ofbet8JGnJn6LuPCBssWV+NcIgmI+Ege6V3gFszlVJl/tussMx1W8N6t9Q62cofX72lJL1XPf83MIu8AtKts0q+udKEjbPYSUaib6UM0Sq7nUsjk3dMr5pV9WbCB4iTAIcgOuV6+DgvZ/PkWEgesPalOFHVhYPcez7VOqtX+9jcQ5tFKxQS0otzSQIRQWO4p6Ezl4BUEsBAi0AFAACAAgA3HhiS5f6cNCrAAAA+gAAABIAAAAAAAAAAAAAAAAAAAAAAENvbmZpZy9QYWNrYWdlLnhtbFBLAQItABQAAgAIANx4YksPyumrpAAAAOkAAAATAAAAAAAAAAAAAAAAAPcAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAi0AFAACAAgA3HhiS/vu3HLHAQAAvwMAABMAAAAAAAAAAAAAAAAA6AEAAEZvcm11bGFzL1NlY3Rpb24xLm1QSwUGAAAAAAMAAwDCAAAA/AMAAAAA",
+        "impersonationMode": "impersonateCurrentUser"
+      },
+      {
+        "name": "897a553a-6c73-46cf-8674-fac7f297f98f",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=\"Email Analytics\";Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=\"UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS+0ojVObAgAAxQYAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIVUW2/aMBR+r9T/YLkvQcqQmKY9rOKBhlZFUy8D1koDNJnkAB6OjWwHiBD/fcckXIrDlpck5/qd73y2gdhyJUmveDdur6+ur8yMaUjIDb1PGRekJZnILY8NJU0iwF5fEXx6KtMxoOV+HYOovys9Hys1Dx64gHqkpAVpTUCjb8OfBrQZLj/9USxJ+LCtVlLgpxl2pFlwDeT1rjN8VSvQ+G6jIbbkiek5WC6n9bUwa1oLicyECInVGdTCAsENPQ/+3ZsBWAezQLcZdCykTS+Oht+5TJq0CB9tB21m2ehQ9lWrVFlk4BFYgthdwT4b41ylp7QHFxEcIUYzJqdYqp8v4Finr5k0E6XTSIkslc7pqnmNw82GdiEGGec0JB1pv36pu+BtSDb0kRurdI67m6ZINgZYdBELa3vq39tllo5B7zxPIP1y7yqtMv/iCxKpBLzyz7Aac/AT3MQShBd/CeYbN9xWlFFyiRSgKH1fbwEyqUhhFqaOkU7bdyK3SYar2gd5OFADhyET/N5uj1vsLQTH1N2yyDgnbRA85Rb0caW7kCIiOFt76K9qF435RVofMdzl9yyeHQoHG1qjiOtHhoLo2dwdKrMMyYQJgyfA2369gdg942e6rZZi479avDyyE2VV93/LE7GcMn6CqwuSpYir6HVy2gpHaQ7OB7gE49zo1HARkLeZD5KkLyg0Q3090kjweF56WlM4OYM0yrBiCvpjyb1kcdolyAzokYFWZlUXUrWEpJy1gRQUvsN16x57YOYBL4o3JjIIfPpCMmjDhGWiVOMzejHRu8xH+/7u0UX/E+rd/556G5bm0vAycStw5k2xUecst4v3odJJ+SOQ3W2tVvTh8tivUnoOqQlKKNgSdVKPBDCJBfbJFWTd/gVQSwECLQAUAAIACADceGJLl/pw0KsAAAD6AAAAEgAAAAAAAAAAAAAAAAAAAAAAQ29uZmlnL1BhY2thZ2UueG1sUEsBAi0AFAACAAgA3HhiSw/K6aukAAAA6QAAABMAAAAAAAAAAAAAAAAA9wAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAIACADceGJL7SiNU5sCAADFBgAAEwAAAAAAAAAAAAAAAADoAQAARm9ybXVsYXMvU2VjdGlvbjEubVBLBQYAAAAAAwADAMIAAADQBAAAAAA=\"",
+        "impersonationMode": "impersonateCurrentUser"
+      },
+      {
+        "name": "4c4a7708-3d27-42e0-8bd1-3c64daacf048",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=WebsiteSocialAnalytics;Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=\"UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS0LwXAcWAgAA3QQAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAH2TTY/aMBCG70j8Byu9JFKKtFLVQ1cc2KTboqotWtjdA6DKJENwceytPeZDiP/eCQ6sugn1IYGZ8TvPTGYsZCi0YmP/vrntdrodu+IGcvYMCysQxjoTXA4Ul3sUmWV9JgG7HUZnrJ3JgCyfdxnI3rM264XW6/BeSOglWiEotGGQfJo9WjB2tnn/W/M8F7NUb5Wkn3Y2VPZFGGCju+FspLdg6J2SIUP2nZs1oFBFbyftLohippyUMUPjIIo9QTvjr/EKAInLAx6mQ4SyH7QHB/E3ofJ+cLoTzI/TlCOf1/rvgpHRpUZqx1fgORURkOyEL6jA2lPbw/+hRBe5ZMVVQWqT/Qu8Sk0MV3apTZlo6UpVOW3Ykjs+HIJEO4VmH1AjKIwh7PAYs0MVnDtqW8IRCn09oGGvkBTIhv0LKEraMI/BWhoVgmFDhR8/9CrakyeFjaBxuArgv4ZtAmi1oeo41rJvsHkBDeOToF63IDwq8ccBO7m1aQm4M3prW6tSKEp6NDypMycyFpZCRU3FByjI27g2KIC2qmiX5ELu2Wkn/tU7ngdl4FA/QKk3kPuRsDc0LN53Wb/q4GWG7mlYnrh0EL6ZsphNU1hyJ9FL/eBltbPX1mF+ZqiO8QyXJJ6pRgoxrs214eeySliZD77gylkXTyutTV7/kcLiMYp8HqFe87WuQwVswxqFUlIbe4kErkjgfLmlYbd/AVBLAQItABQAAgAIANx4YkuX+nDQqwAAAPoAAAASAAAAAAAAAAAAAAAAAAAAAABDb25maWcvUGFja2FnZS54bWxQSwECLQAUAAIACADceGJLD8rpq6QAAADpAAAAEwAAAAAAAAAAAAAAAAD3AAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLAQItABQAAgAIANx4YktC8FwHFgIAAN0EAAATAAAAAAAAAAAAAAAAAOgBAABGb3JtdWxhcy9TZWN0aW9uMS5tUEsFBgAAAAADAAMAwgAAAEsEAAAAAA==\"",
+        "impersonationMode": "impersonateCurrentUser"
+      },
+      {
+        "name": "6891c57b-b2fd-480e-8af6-f0660dea0dd8",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=BrandAwareness;Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=\"UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS4TDCU/8AQAANQQAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1TTY/aMBC9I/EfLPcSpCzSSlUPXXFgw26L+oWAdg+AKkOG4OLY1B7zIcR/38k6ZNklvsSZsd97M2/sYIHSaDYK39u7ZqPZcCthIWX3Vui0u6O9BudYhynAZoPRGhlvF0CRh/0CVPvJ2PXcmHX0KBW0E6MRNLqIJ5+nvx1YN93e/DMiTeW0Z3Za0dZN+9ptpAU2uO9PB2YHlr49CiyQ/RB2DSh11t4rt+etmGmvVMzQemjFQcFbbX9HKwAkPUHYcdJHyDv87SEef5M67fCXs3x2mvQEilmJ94EPrMkNUtlfQaQkmhPcWMypoDJTxqM66lYFk6yEzghlfNjAK8SY7rilsXlilM91kXRRDWd8PPIhZOQEp3rpFEPY4ylmR54Yr9EeruKEkXrqWiIQMlNzoAcbYTEnS65SX0AT7TWVd2hysDQVWe096hycgyntgxCz8UpYiZUE7fM52Jfkg85EBpdgF8nu4r+XTuJF2RfZ7+YgVC0oTdqWulZ/bQhb0L6Q2df46WO76PnpdDaq69EMITdbSIMl7pbMCrlqzIuFlYePZNYfoTxE71yO2aQHS+EVBqifIi/exvvxm525i2UDdwUetJRSIozLcBn4tSyIivAxGFEky5LpyRiblj9KOjy1WoFH6le+2jEshLqolEKUZG87USA0AZwv1zTq7hlQSwECLQAUAAIACADceGJLl/pw0KsAAAD6AAAAEgAAAAAAAAAAAAAAAAAAAAAAQ29uZmlnL1BhY2thZ2UueG1sUEsBAi0AFAACAAgA3HhiSw/K6aukAAAA6QAAABMAAAAAAAAAAAAAAAAA9wAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAIACADceGJLhMMJT/wBAAA1BAAAEwAAAAAAAAAAAAAAAADoAQAARm9ybXVsYXMvU2VjdGlvbjEubVBLBQYAAAAAAwADAMIAAAAxBAAAAAA=\"",
+        "impersonationMode": "impersonateCurrentUser"
+      },
+      {
+        "name": "ce60e201-4167-41bc-819f-d2569c45fa16",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=LocationAnalytics;Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=\"UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS7C3gjE0AgAAtgQAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIVTTY/aMBC9I/EfLPcSpBRppaqHrjiwyaKNyrZoodsDoMokQ3BxbGRPFhDiv+/kC2ihqi9J3vObefMcO4hRGs3G1fPuvt1qt9xKWEjY0MSiAPtaqD3K2LEeU4DtFqM1NrmNgZDHXQyq+9PY9cKYtTeQCrqB0QganceDL7MfDqybvX38bUSSyFlotlrRq5tF2m2kBTZ6iGYjswVLz5CAGNmzsGtAqdPuTrkd7/hM50r5DG0OHb9y8GCFTvpbsqrBucbs0KS/xisAJGuVx8M0Qsh6/J/7uf9V6qTHSxmfH6ehQDGvu3zgI2syg5THE4iERuFUeSIWNGbN1Lj3H0OdU8VgJXRKBSf7DZyrTUjulsZmgVF5pgvSeTfa+4cDD8WeUxq0hSUC4eizA3+BlNo1MMIOS5j0SU6RBrQvNXZ/teFVOolsjMJiw+k8W4C9YB91coN7onwJjjR+/tQt/J4VxrIobCRC70tmIK1DVvINpUwqY6FKOsxtmdh1yWepcwR3w8JkZcGtjEr+GOt4zvoFtMgovSrUi8OriBr2/jqUIuOR2eRKWIlFZHxMI5GDq6Z1QKWqJIdmL1SlibINbXQ0EglPnvo5mhfIzBskdfc7MlVxp+tVLDx5HdA/8CpUDt71QD6bhrAUucIK+UYsCfnV7eXzxkGxbOXgIo7iu4kD/Rquge/LYsACPlQpF2SdOF1YY5PmPKXDY6dT9ZH63O/mP154dV5thVrS2XUDBUJTgUZ8I677d1BLAQItABQAAgAIANx4YkuX+nDQqwAAAPoAAAASAAAAAAAAAAAAAAAAAAAAAABDb25maWcvUGFja2FnZS54bWxQSwECLQAUAAIACADceGJLD8rpq6QAAADpAAAAEwAAAAAAAAAAAAAAAAD3AAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLAQItABQAAgAIANx4Ykuwt4IxNAIAALYEAAATAAAAAAAAAAAAAAAAAOgBAABGb3JtdWxhcy9TZWN0aW9uMS5tUEsFBgAAAAADAAMAwgAAAGkEAAAAAA==\"",
+        "impersonationMode": "impersonateCurrentUser"
+      },
+      {
+        "name": "ef8e32a2-0770-4c60-b00f-7c5b1d19eb88",
+        "connectionString": "Provider=Microsoft.PowerBI.OleDb;Location=\"Campaign Analytics\";Global Pipe=b5fe478a-4297-4f25-9875-a3bed1dbb4b3;Mashup=\"UEsDBBQAAgAIANx4YkuX+nDQqwAAAPoAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPQQ6CMBREr0K657cFQSWfsnArxsTEGHcEKjRCMVAsd3PhkbyCJopx527m5S1mHrc7JmNTO1fZ9arVMeHAiCN13hZKlzEZzMldkETgNsvPWSmdl6z7aOyLmFTGXCJKrbVgfWi7knqMcXpI17u8kk1GvrL6L7tK9ybTuSQC9+8xwgNvDjMe+uAHHOmEMVV6yhwC8L1lCAzpD8bVUJuhk0Jqd3NEOlWknx/iCVBLAwQUAAIACADceGJLD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA3HhiS4wKhlhBAgAAVAUAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIVUXW/aMBR9r8R/sFxNClKGhDTtYRUPXVg3tK1l0G4PBU0muYCHYyP7mkIR/33XTQIUMs0vSc6xzz33w3GQojSaDYtn+6px0bhwc2EhY5c8EflSyJlm11qoDcrUcdZhCrBxwWgNjbcpEPJpnYJq/TJ2MTFmEd1IBa3EaASNLuLJh9GDA+tGq7d/jMgyOeqaJ63o1Y162i2lBdb/2Bv1zRNYenYJSJF9F3YBKPWstVZuzZsx016pmKH10IwLBy++nqHy6X4P5wBIjgpr28ceQt7hp9t4/FXqrMNfdvPx7rErUIxLzUvetyY3SBX4AiIj4yHpezGhpEqmxKP68M29UDIXekY695slHETurdBuamyeGOVzHUgX1USNt1s+gBm1hVPWtIshrHEXsy1PjNdoN2c4aWSeapcIhJmp2bDvaK9LXE/j+3etYOA1eStyODv6wwslpzIVWOfoFctufT4Bex7hG6XGhijQuzOFwLkaU8bhOTqAFWgPNcRdr1LWLyYOcT+DBlv4i940Xx/dHZo2AE3pZ6zozlHzC6KEo5PuhmZVGZCEWxrtwPGarPdsBR0HP9Zs/3dkTq0GEw8olXyumtQHugYaxQwOJeqLlC6W+0cBrj2aAeRmBVkp2yYbBbe/+WHh3t0NTe5PoTxEpwnE7LELU+EVFlphsOhY3Y9lXBkIyxYGjkofvqvSY1zCJXA3DdECvC1GKpDlENCvxNis/FDS4a7ZLOJIfYhXW+Vg1kWlFQpJg9pKFAhNAtXhmmpd/QVQSwECLQAUAAIACADceGJLl/pw0KsAAAD6AAAAEgAAAAAAAAAAAAAAAAAAAAAAQ29uZmlnL1BhY2thZ2UueG1sUEsBAi0AFAACAAgA3HhiSw/K6aukAAAA6QAAABMAAAAAAAAAAAAAAAAA9wAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAIACADceGJLjAqGWEECAABUBQAAEwAAAAAAAAAAAAAAAADoAQAARm9ybXVsYXMvU2VjdGlvbjEubVBLBQYAAAAAAwADAMIAAAB2BAAAAAA=\"",
+        "impersonationMode": "impersonateCurrentUser"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "5b01e393-08e8-476f-b4aa-8738add030dc",
+        "fromColumn": "Date",
+        "fromTable": "Email Analytics",
+        "toColumn": "DateValue",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "2321bbf6-d24a-4306-9af4-282352a6bdab",
+        "fromColumn": "Date",
+        "fromTable": "LocationAnalytics",
+        "toColumn": "DateValue",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "59471e98-7392-47c1-90ef-3c4d2f6103e1",
+        "fromColumn": "DateValue",
+        "fromTable": "DimDate",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_7a017cab-febb-429d-88e5-256465b281f4"
+      },
+      {
+        "name": "e6f89cec-560f-49c2-bab6-51083986eab9",
+        "fromColumn": "WeekEnding",
+        "fromTable": "DimDate",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_8964bce0-3173-469f-b943-8dde8064ab8a"
+      },
+      {
+        "name": "9c5432d9-5362-4fcf-91f2-490bf45a7397",
+        "fromColumn": "Date",
+        "fromTable": "BrandAwareness",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_ac31b72a-3477-4466-8998-ea7e8929e80e"
+      },
+      {
+        "name": "ee68e6c5-775a-4fb9-9974-1393260564d1",
+        "fromColumn": "Day",
+        "fromTable": "LocationAnalytics",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_71f9d89a-bf38-4512-9603-2625e3820cbd"
+      }
+    ],
+    "tables": [
+      {
+        "name": "DimDate",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "0298172a-cc55-4155-9fac-b5cc78b84125"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimDate"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "DateValue",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"LongDate\" FormatString=\"dddd, d MMMM yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "DateValue",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_7a017cab-febb-429d-88e5-256465b281f4"
+                },
+                "isDefault": true,
+                "relationship": "59471e98-7392-47c1-90ef-3c4d2f6103e1"
+              }
+            ]
+          },
+          {
+            "name": "DayOfMonth",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "DayOfMonth",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DayOfYear",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "DayOfYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MonthOfYear",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "MonthOfYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MonthName",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sortByColumn": "MonthOfYear",
+            "sourceColumn": "MonthName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "QuarterOfYear",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "QuarterOfYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "QuarterName",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "QuarterName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WeekEnding",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"LongDate\" FormatString=\"dddd, d MMMM yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "WeekEnding",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_8964bce0-3173-469f-b943-8dde8064ab8a"
+                },
+                "isDefault": true,
+                "relationship": "e6f89cec-560f-49c2-bab6-51083986eab9"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate-c7fb5115-5463-4b0b-9089-0b723d394fc4",
+            "mode": "import",
+            "source": {
+              "dataSource": "36ecd768-f6ba-4289-955d-45f1c722eccb",
+              "query": "SELECT * FROM [DimDate]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Email Analytics",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "482c5589-eea7-498e-8ef1-02a6a6f40382"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "Email Analytics"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Recency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Recency",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "History Segment ID",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "History Segment ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "History Segment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "History Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "History",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "History",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Men",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Men",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Women",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Women",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Zip Code",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Zip Code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Newbie",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Newbie",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Channel",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Channel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Segment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Opens",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Opens",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Clicks",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Clicks",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Revenue",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "Revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Category ID",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Category ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"LongDate\" FormatString=\"dddd, d MMMM yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Campaign",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Campaign",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "CategorySetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Country",
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Customer Segment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Customer Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Email Status",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Email Status",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Direct Marketing-22a97b40-56f7-43d6-bf2f-e0835b5890fa",
+            "mode": "import",
+            "source": {
+              "dataSource": "897a553a-6c73-46cf-8674-fac7f297f98f",
+              "query": "SELECT * FROM [Email Analytics]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "WebsiteSocialAnalytics",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "46b7b9b6-98cc-4474-9f84-01a2506e4c69"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "WebsiteSocialAnalytics"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Channel",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Channel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sessions",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Sessions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Device Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Device Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sources",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Sources",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Conversations",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Conversations",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Page",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Page",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Visits",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Visits",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Unique Visitors",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Unique Visitors",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Browser",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Browser",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sentiment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Sentiment"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Sentiment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Duration (min)",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Duration (min)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Age Segment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Age Segment"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Age Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Daily Users",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Daily Users",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Conversion Rate (%)",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Conversion Rate (%)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Return Visitors",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Return Visitors",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Tweets",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Tweets",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Retweets",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Retweets",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Hashtags",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Hashtags",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Campaign Name",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Campaign Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Status"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "WebsiteSocialAnalytics-e6681771-0dad-4eb2-b012-a3611404312c",
+            "mode": "import",
+            "source": {
+              "dataSource": "4c4a7708-3d27-42e0-8bd1-3c64daacf048",
+              "query": "SELECT * FROM [WebsiteSocialAnalytics]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "BrandAwareness",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "b1e5f29d-798a-4f11-b1b3-6db8e275c4b5"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "BrandAwareness"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Department",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Customer Segment",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Customer Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"LongDate\" FormatString=\"dddd, d MMMM yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_ac31b72a-3477-4466-8998-ea7e8929e80e"
+                },
+                "isDefault": true,
+                "relationship": "9c5432d9-5362-4fcf-91f2-490bf45a7397"
+              }
+            ]
+          },
+          {
+            "name": "Popularity",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Popularity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Engagement",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Engagement",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Acquisition",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Acquisition",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Loyalty",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Loyalty",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Conversion",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Conversion",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Revenue",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Revenue",
+            "summarizeBy": "sum"
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "BrandAwareness-0c258c4c-3edd-4de0-8887-baa1a5ab18d0",
+            "mode": "import",
+            "source": {
+              "dataSource": "6891c57b-b2fd-480e-8af6-f0660dea0dd8",
+              "query": "SELECT * FROM [BrandAwareness]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocationAnalytics",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "aba2db40-08a6-4ca4-9540-10fb7033ea84"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "LocationAnalytics"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"LongDate\" FormatString=\"dddd, d MMMM yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "Day",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_71f9d89a-bf38-4512-9603-2625e3820cbd"
+                },
+                "isDefault": true,
+                "relationship": "ee68e6c5-775a-4fb9-9974-1393260564d1"
+              }
+            ]
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Visit Start",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Visit Start",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Visit End",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Visit End",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Hour",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Hour",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Visitor ID",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Visitor ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "First Visit",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Boolean\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Boolean#####not a type"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceColumn": "First Visit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Duration",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Duration",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Minutes",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberDecimal\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0",
+            "sourceColumn": "Minutes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Visit Type",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Visit Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Department",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Stores",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Stores",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Engagement",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Engagement",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Acquisition",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Acquisition",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Impressions",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Impressions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Conversion",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Conversion",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Revenue",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"0\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "sourceColumn": "Revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "WeekDay",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(WEEKDAY(LocationAnalytics[Day]),\"dddd\")",
+            "isDataTypeInferred": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Year"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Engaged Visitors %",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Percentage\" Accuracy=\"0\" />"
+              }
+            ],
+            "expression": "AVERAGE(LocationAnalytics[Engaged Visitors]) /100",
+            "formatString": "0%;-0%;0%"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "BrandAwarenessLocationLog-9db15b40-00e1-48be-ac7e-b1d5a4c80a94",
+            "mode": "import",
+            "source": {
+              "dataSource": "ce60e201-4167-41bc-819f-d2569c45fa16",
+              "query": "SELECT * FROM [LocationAnalytics]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Campaign Analytics",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "dd191f04-0afa-4662-94d7-8a95bb6480e4"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "Campaign Analytics"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Product Category",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Product Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Campaign ID",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Campaign ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Campaign Name",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Campaign Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Qualification",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Qualification",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Qualification Number",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Qualification Number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Response Status",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Response Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Responses",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Responses",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Cost",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Cost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Revenue",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "sourceColumn": "Revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ROI",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Percentage\" Accuracy=\"2\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "sourceColumn": "ROI",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Lead Generation (%)",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Lead Generation (%)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Revenue Target",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "Revenue Target",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Profit",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "sourceColumn": "Profit",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Marketing Cost",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "sourceColumn": "Marketing Cost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Utilization",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Utilization"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Utilization",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Packets",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Packets"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "Packets",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Deployment Ring",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Deployment Ring"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Deployment Ring",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Campaign Tactic",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Campaign Tactic"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Campaign Tactic",
+            "summarizeBy": "none"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Network Utilization",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Percentage\" Accuracy=\"2\" />"
+              }
+            ],
+            "expression": "sum('Campaign Analytics'[Utilization])",
+            "formatString": "0.00%;-0.00%;0.00%"
+          },
+          {
+            "name": "PPS",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              }
+            ],
+            "expression": "SUM('Campaign Analytics'[Packets])",
+            "formatString": "0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "AnalyzeCampaigns-e53b7b9f-8232-471d-85f5-801c1b8c637d",
+            "mode": "import",
+            "source": {
+              "dataSource": "ef8e32a2-0770-4c60-b00f-7c5b1d19eb88",
+              "query": "SELECT * FROM [Campaign Analytics]",
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_57662edc-43a9-4292-ae0c-ce6922399c2b",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"GeneralDateTimeLong\" FormatString=\"General Date\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "ordinal": 3
+              }
+            ]
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "partitions": [
+          {
+            "name": "DateTableTemplate_57662edc-43a9-4292-ae0c-ce6922399c2b-8e29e028-0a5c-42d1-b503-f0c5b05f4fd1",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_7a017cab-febb-429d-88e5-256465b281f4",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"GeneralDateTimeLong\" FormatString=\"General Date\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "ordinal": 3
+              }
+            ]
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "LocalDateTable_7a017cab-febb-429d-88e5-256465b281f4-a7d012be-c64b-49b5-963c-11984995b437",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('DimDate'[DateValue])), 1, 1), Date(Year(MAX('DimDate'[DateValue])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_8964bce0-3173-469f-b943-8dde8064ab8a",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"GeneralDateTimeLong\" FormatString=\"General Date\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "ordinal": 3
+              }
+            ]
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "LocalDateTable_8964bce0-3173-469f-b943-8dde8064ab8a-6541b7b6-be5c-4c78-a8bb-e01f47cfa87b",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('DimDate'[WeekEnding])), 1, 1), Date(Year(MAX('DimDate'[WeekEnding])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_ac31b72a-3477-4466-8998-ea7e8929e80e",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"GeneralDateTimeLong\" FormatString=\"General Date\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "ordinal": 3
+              }
+            ]
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "LocalDateTable_ac31b72a-3477-4466-8998-ea7e8929e80e-1ff95cc5-41af-4b6d-ab59-b12ca4e21de8",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('BrandAwareness'[Date])), 1, 1), Date(Year(MAX('BrandAwareness'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_71f9d89a-bf38-4512-9603-2625e3820cbd",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"5129\" Group=\"GeneralDateTimeLong\" FormatString=\"General Date\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "ordinal": 3
+              }
+            ]
+          }
+        ],
+        "isHidden": true,
+        "partitions": [
+          {
+            "name": "LocalDateTable_71f9d89a-bf38-4512-9603-2625e3820cbd-1d589222-0c73-498c-8268-8ea5edb703a6",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('LocationAnalytics'[Day])), 1, 1), Date(Year(MAX('LocationAnalytics'[Day])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}

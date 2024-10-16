@@ -1,0 +1,480 @@
+{
+  "config": "{\"version\":\"2.5\",\"activeSectionIndex\":0}",
+  "layoutOptimization": 1,
+  "pods": [
+    {
+      "boundSection": "ReportSection3",
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection2",
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSection1",
+      "name": "Pod2"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Aquarium.css",
+            "path": "Aquarium.css",
+            "type": 1
+          },
+          {
+            "name": "Aquarium.js",
+            "path": "Aquarium.js",
+            "type": 0
+          },
+          {
+            "name": "icon.png",
+            "path": "icon.png",
+            "type": 3
+          }
+        ],
+        "name": "Aquarium1442671919391",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "ChordChart.css",
+            "path": "ChordChart.css",
+            "type": 1
+          },
+          {
+            "name": "ChordChart.js",
+            "path": "ChordChart.js",
+            "type": 0
+          },
+          {
+            "name": "icon.png",
+            "path": "icon.png",
+            "type": 3
+          }
+        ],
+        "name": "ChordChart1444757060245",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "WordCloud.css",
+            "path": "WordCloud.css",
+            "type": 1
+          },
+          {
+            "name": "WordCloud.js",
+            "path": "WordCloud.js",
+            "type": 0
+          },
+          {
+            "name": "icon.png",
+            "path": "icon.png",
+            "type": 3
+          }
+        ],
+        "name": "WordCloud1447959067750",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Website Analytics",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Product Category\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Product Category\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}},\"displayName\":\"(Blank)\"}],\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection1",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":4,\"y\":0,\"z\":0,\"width\":364.4871794871796,\"height\":53}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Website & Social Analytics\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"wf_segoe-ui_normal\",\"fontSize\":\"28px\"}}]}]}}]}}}",
+          "height": 53.00,
+          "width": 364.49,
+          "x": 4.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":141.16136919315403,\"z\":1,\"width\":177,\"height\":152}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"WebsiteSocialAnalytics.Region\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Region\"},\"Name\":\"WebsiteSocialAnalytics.Region\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 152.00,
+          "width": 177.00,
+          "x": 0.00,
+          "y": 141.16,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":918,\"y\":143,\"z\":10,\"width\":359.00004059061735,\"height\":256.35452322738377}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Popular Products\",\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\"},\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"WebsiteSocialAnalytics.Product Category\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(WebsiteSocialAnalytics.Tweets)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"},\"Name\":\"WebsiteSocialAnalytics.Product Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Tweets\"}},\"Function\":5},\"Name\":\"CountNonNull(WebsiteSocialAnalytics.Tweets)\"}]},\"objects\":{}}}",
+          "height": 256.35,
+          "width": 359.00,
+          "x": 918.00,
+          "y": 143.00,
+          "z": 10.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":579,\"y\":419,\"z\":11,\"width\":337,\"height\":282.7237163814181}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Tweets by country and sentiment\"},\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Country\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Tweets)\"}],\"Series\":[{\"queryRef\":\"WebsiteSocialAnalytics.Sentiment\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Country\"},\"Name\":\"WebsiteSocialAnalytics.Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Tweets\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Tweets)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Sentiment\"},\"Name\":\"WebsiteSocialAnalytics.Sentiment\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ff8b35'\"}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neutral'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#79C75B'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Positive'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ff4900'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Negative'\"}}}}}]}}],\"legend\":[],\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 282.72,
+          "width": 337.00,
+          "x": 579.00,
+          "y": 419.00,
+          "z": 11.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":703.2762836185819,\"y\":17.6039119804401,\"z\":4,\"width\":200.68459657701712,\"height\":98.58190709046455,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":false,\"text\":\"Average Unique Visitors\",\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\"},\"background\":{\"color\":\"#B9E5F3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":1},\"Name\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 98.58,
+          "width": 200.68,
+          "x": 703.28,
+          "y": 17.60,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1,\"y\":442,\"z\":13,\"width\":173.6772616136919,\"height\":276}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"WebsiteSocialAnalytics.Product Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"},\"Name\":\"WebsiteSocialAnalytics.Product Category\"}]},\"objects\":{\"general\":[{\"properties\":{}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 276.00,
+          "width": 173.68,
+          "x": 1.00,
+          "y": 442.00,
+          "z": 13.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":535.158924205379,\"y\":0.880195599022005,\"z\":5,\"width\":370.5623471882641,\"height\":22.004889975550125,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\",\"text\":\"Average daily and unique users\"},\"visualType\":\"basicShape\",\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"line\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "height": 22.00,
+          "width": 370.56,
+          "x": 535.16,
+          "y": 0.88,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920,\"y\":420,\"z\":15,\"width\":356.9999689601161,\"height\":296.9999773170079}}],\"singleVisual\":{\"title\":{\"background\":\"#000000\",\"show\":true,\"fontColor\":\"#FFFFFF\"},\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"},{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"},{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Return Visitors)\"}],\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Device Category\",\"active\":true},{\"queryRef\":\"WebsiteSocialAnalytics.Duration (min)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Daily Users\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Return Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Return Visitors)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Device Category\"},\"Name\":\"WebsiteSocialAnalytics.Device Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Duration (min)\"},\"Name\":\"WebsiteSocialAnalytics.Duration (min)\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ccf1ee'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Device Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Desktop'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FE9666'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Device Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Mobile'\"}}}}}]}}]}}}",
+          "height": 297.00,
+          "width": 357.00,
+          "x": 920.00,
+          "y": 420.00,
+          "z": 15.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":364,\"y\":0,\"z\":9,\"width\":163,\"height\":120.16136919315406}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Number of visits\",\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Visits)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Visits\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Visits)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 120.16,
+          "width": 163.00,
+          "x": 364.00,
+          "y": 0.00,
+          "z": 9.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1101.1246943765282,\"y\":0.880195599022005,\"z\":7,\"width\":169.87775061124694,\"height\":115.30562347188264,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Average  conversion rate (%)\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(WebsiteSocialAnalytics.Conversion Rate (%))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Conversion Rate (%)\"}},\"Function\":1},\"Name\":\"CountNonNull(WebsiteSocialAnalytics.Conversion Rate (%))\"}]},\"objects\":{\"labels\":[],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 115.31,
+          "width": 169.88,
+          "x": 1101.12,
+          "y": 0.88,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":536.039119804401,\"y\":15.843520782396089,\"z\":3,\"width\":169.87775061124694,\"height\":101.22249388753056,\"angle\":0}}],\"singleVisual\":{\"title\":{\"text\":\"Average Daily Users\",\"show\":false,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Daily Users\"}},\"Function\":1},\"Name\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"}]},\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 101.22,
+          "width": 169.88,
+          "x": 536.04,
+          "y": 15.84,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":202,\"y\":420,\"z\":14,\"width\":368,\"height\":289.4425427872861}}],\"singleVisual\":{\"title\":{\"text\":\"Sentiment by product category\",\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\"},\"visualType\":\"hundredPercentStackedBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(WebsiteSocialAnalytics.Sentiment)\"}],\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Product Category\",\"active\":true}],\"Series\":[{\"queryRef\":\"WebsiteSocialAnalytics.Sentiment\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Sentiment\"}},\"Function\":5},\"Name\":\"CountNonNull(WebsiteSocialAnalytics.Sentiment)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Sentiment\"},\"Name\":\"WebsiteSocialAnalytics.Sentiment\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"},\"Name\":\"WebsiteSocialAnalytics.Product Category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Sentiment\"}},\"Function\":5}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#79C75B'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Positive'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffbc00'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neutral'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Sentiment\"}},\"Right\":{\"Literal\":{\"Value\":\"'Negative'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}}}]}}}",
+          "height": 289.44,
+          "width": 368.00,
+          "x": 202.00,
+          "y": 420.00,
+          "z": 14.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":582,\"y\":142,\"z\":12,\"width\":329.31784841075796,\"height\":259}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Unique visitors by customer segment\",\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":false},\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Customer Segment\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}],\"Gradient\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Age Segment\"},\"Name\":\"WebsiteSocialAnalytics.Customer Segment\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":0}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#71C1FF'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091FF'\"}}}}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}]}}}",
+          "height": 259.00,
+          "width": 329.32,
+          "x": 582.00,
+          "y": 142.00,
+          "z": 12.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":208.04156479217596,\"y\":140,\"z\":8,\"width\":363.95843520782404,\"height\":259}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Visits and average of duration (min) by page\"},\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Page\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Visits)\"}],\"Y2\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Duration (min))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Page\"},\"Name\":\"WebsiteSocialAnalytics.Page\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Visits\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Visits)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Duration (min)\"}},\"Function\":1},\"Name\":\"Sum(WebsiteSocialAnalytics.Duration (min))\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Visits\"}},\"Function\":0}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "height": 259.00,
+          "width": 363.96,
+          "x": 208.04,
+          "y": 140.00,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":922.4449877750611,\"y\":0,\"z\":6,\"width\":171.63814180929097,\"height\":116.18581907090464,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Average duration (min)\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Avg(WebsiteSocialAnalytics.Duration (min))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Duration (min)\"}},\"Function\":1},\"Name\":\"Avg(WebsiteSocialAnalytics.Duration (min))\"}]},\"objects\":{\"labels\":[],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 116.19,
+          "width": 171.64,
+          "x": 922.44,
+          "y": 0.00,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":309.953545232274,\"z\":2,\"width\":175,\"height\":115}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"WebsiteSocialAnalytics.Device Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Device Category\"},\"Name\":\"WebsiteSocialAnalytics.Device Category\"}]},\"objects\":{\"general\":[{\"properties\":{}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 115.00,
+          "width": 175.00,
+          "x": 0.00,
+          "y": 309.95,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Location Analytics",
+      "displayOption": 1,
+      "height": 720.00,
+      "name": "ReportSection2",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":441,\"y\":0,\"z\":4,\"width\":164,\"height\":94.35941320293401}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Number of visitors\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(BrandAwareness.Popularity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BrandAwareness\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Popularity\"}},\"Function\":0},\"Name\":\"Sum(BrandAwareness.Popularity)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "height": 94.36,
+          "width": 164.00,
+          "x": 441.00,
+          "y": 0.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":0,\"z\":1,\"width\":249.48462519369835,\"height\":53}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Location Analytics\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"wf_segoe-ui_normal\",\"fontSize\":\"28px\"}}]}]}}]}}}",
+          "height": 53.00,
+          "width": 249.48,
+          "x": 16.00,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":931,\"y\":120,\"z\":11,\"width\":345.9999761231662,\"height\":288.880195599022}}],\"singleVisual\":{\"title\":{\"text\":\"Number of Visitors and Visit Duration by Departments\",\"show\":true,\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\"},\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LocationAnalytics.Week Number\",\"active\":true}],\"Series\":[{\"queryRef\":\"LocationAnalytics.Department\"}],\"Y\":[{\"queryRef\":\"Count(LocationAnalytics.Visitor ID)\"}],\"Y2\":[{\"queryRef\":\"Avg(LocationAnalytics.Duration)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Week Number\"},\"Name\":\"LocationAnalytics.Week Number\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Department\"},\"Name\":\"LocationAnalytics.Department\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Visitor ID\"}},\"Function\":2},\"Name\":\"Count(LocationAnalytics.Visitor ID)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Duration\"}},\"Function\":1},\"Name\":\"Avg(LocationAnalytics.Duration)\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#79C75B'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"'Entertainment'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#fd817e'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"'Accessories'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00B8AA'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"'Gaming'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#f5d341'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"'Mens'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FE9666'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Department\"}},\"Right\":{\"Literal\":{\"Value\":\"'Womens'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#333333'\"}}}}}},\"selector\":{\"metadata\":\"Avg(LocationAnalytics.Duration)\"}}]}}}",
+          "height": 288.88,
+          "width": 346.00,
+          "x": 931.00,
+          "y": 120.00,
+          "z": 11.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.0586797066015,\"y\":0,\"z\":6,\"width\":163.7163814180929,\"height\":94.18092909535453,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Engaged Visitors (%)\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"LocationAnalytics.Engaged Visitors %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Engaged Visitors %\"},\"Name\":\"LocationAnalytics.Engaged Visitors %\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 94.18,
+          "width": 163.72,
+          "x": 984.06,
+          "y": 0.00,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":579.1494532199272,\"y\":425.176184690158,\"z\":12,\"width\":341.19076549210206,\"height\":292.19927095990283,\"angle\":0}}],\"singleVisual\":{\"title\":{\"background\":\"#000000\",\"show\":true,\"fontColor\":\"#FFFFFF\"},\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"}],\"Y\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"}],\"Size\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Return Visitors)\"}],\"Series\":[{\"queryRef\":\"WebsiteSocialAnalytics.Device Category\"}],\"Play\":[{\"queryRef\":\"WebsiteSocialAnalytics.Duration (min)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Daily Users\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Return Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Return Visitors)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Device Category\"},\"Name\":\"WebsiteSocialAnalytics.Device Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Duration (min)\"},\"Name\":\"WebsiteSocialAnalytics.Duration (min)\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ccf1ee'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Device Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Desktop'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FE9666'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Device Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Mobile'\"}}}}}]}}],\"currentFrameIndex\":[{\"properties\":{\"index\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}]}}}",
+          "height": 292.20,
+          "width": 341.19,
+          "x": 579.15,
+          "y": 425.18,
+          "z": 12.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.2150668286756,\"y\":424.30133657351155,\"z\":13,\"width\":356.93803159173757,\"height\":293.0741190765492,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Popular Products\",\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\"},\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"CountNonNull(LocationAnalytics.Visitor ID)\"}],\"Category\":[{\"queryRef\":\"LocationAnalytics.Region\",\"active\":true}],\"Series\":[{\"queryRef\":\"LocationAnalytics.Product Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Visitor ID\"}},\"Function\":5},\"Name\":\"CountNonNull(LocationAnalytics.Visitor ID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Region\"},\"Name\":\"LocationAnalytics.Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Product Category\"},\"Name\":\"LocationAnalytics.Product Category\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ccf1ee'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}}}}}}],\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 293.07,
+          "width": 356.94,
+          "x": 921.22,
+          "y": 424.30,
+          "z": 13.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":617,\"y\":0,\"z\":3,\"width\":163,\"height\":96.40097799511003}}],\"singleVisual\":{\"title\":{\"text\":\"Number of loyal visitors\",\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(BrandAwareness.Loyalty)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BrandAwareness\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Loyalty\"}},\"Function\":0},\"Name\":\"Sum(BrandAwareness.Loyalty)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "height": 96.40,
+          "width": 163.00,
+          "x": 617.00,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":786,\"y\":0,\"z\":7,\"width\":186.7286063569684,\"height\":95}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Average duration (mins) in store\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(BrandAwarenessLocationLog.Duration)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Duration\"}},\"Function\":3},\"Name\":\"Sum(BrandAwarenessLocationLog.Duration)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 95.00,
+          "width": 186.73,
+          "x": 786.00,
+          "y": 0.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":271.98044009779954,\"y\":0,\"z\":5,\"width\":160.1955990220049,\"height\":93.30073349633253,\"angle\":0}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Total revenue\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(BrandAwareness.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BrandAwareness\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Revenue\"}},\"Function\":0},\"Name\":\"Sum(BrandAwareness.Revenue)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 93.30,
+          "width": 160.20,
+          "x": 271.98,
+          "y": 0.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":212.07334963325184,\"y\":425.00002745835883,\"z\":8,\"width\":356,\"height\":293}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Visitors by hour of the day\"},\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BrandAwarenessLocationLog.Hour\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(BrandAwarenessLocationLog.Visitor ID)\"}],\"Gradient\":[{\"queryRef\":\"CountNonNull(BrandAwarenessLocationLog.Visitor ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Hour\"},\"Name\":\"BrandAwarenessLocationLog.Hour\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Visitor ID\"}},\"Function\":5},\"Name\":\"CountNonNull(BrandAwarenessLocationLog.Visitor ID)\"}]},\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1c2325'\"}}}}}}}],\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091FF'\"}}}}},\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#4fcaff'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091FF'\"}}}}}}}}]}}}",
+          "height": 293.00,
+          "width": 356.00,
+          "x": 212.07,
+          "y": 425.00,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":211.07823960880194,\"y\":118.359413202934,\"z\":9,\"width\":361,\"height\":289}}],\"singleVisual\":{\"title\":{\"background\":\"#000000\",\"show\":true,\"fontColor\":\"#FFFFFF\",\"text\":\"Variance to target visitors by store department\"},\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LocationAnalytics.Department\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Department\"},\"Name\":\"LocationAnalytics.Department\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091FF'\"}}}}},\"fillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF0007'\"}}}},\"mid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}},\"value\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#79C75B'\"}}}}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 289.00,
+          "width": 361.00,
+          "x": 211.08,
+          "y": 118.36,
+          "z": 9.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":105.25660964230171,\"z\":2,\"width\":198.1959564541213,\"height\":379.59564541213064}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"LocationAnalytics.Country\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Country\"},\"Name\":\"LocationAnalytics.Country\"}]},\"objects\":{\"general\":[{\"properties\":{}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 379.60,
+          "width": 198.20,
+          "x": 0.00,
+          "y": 105.26,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":529.642301710731,\"z\":0,\"width\":191.4774494556765,\"height\":189.23794712286158}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"LocationAnalytics.Department\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Department\"},\"Name\":\"LocationAnalytics.Department\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 189.24,
+          "width": 191.48,
+          "x": 0.00,
+          "y": 529.64,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":576,\"y\":119,\"z\":10,\"width\":348.11980440097796,\"height\":281.32273838630806}}],\"singleVisual\":{\"title\":{\"background\":\"#000000\",\"show\":true,\"fontColor\":\"#FFFFFF\",\"text\":\"Visit type by store departments\"},\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"LocationAnalytics.Department\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(LocationAnalytics.Minutes)\"}],\"Series\":[{\"queryRef\":\"LocationAnalytics.Threshold\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Minutes\"}},\"Function\":0},\"Name\":\"Sum(LocationAnalytics.Minutes)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Visit Type\"},\"Name\":\"LocationAnalytics.Threshold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Department\"},\"Name\":\"LocationAnalytics.Department\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Minutes\"}},\"Function\":0}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#7d4f73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Visit Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'long'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C811'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Visit Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'short'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00B8AA'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocationAnalytics\"}},\"Property\":\"Visit Type\"}},\"Right\":{\"Literal\":{\"Value\":\"'passing'\"}}}}}]}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]}}}",
+          "height": 281.32,
+          "width": 348.12,
+          "x": 576.00,
+          "y": 119.00,
+          "z": 10.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"VisualContainer5\",\"target\":\"VisualContainer3\",\"type\":3},{\"source\":\"VisualContainer5\",\"target\":\"VisualContainer12\",\"type\":1}]}",
+      "displayName": "Operations Analytics",
+      "displayOption": 1,
+      "height": 720.00,
+      "name": "ReportSection3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.3487881981032666,\"y\":0,\"z\":3,\"width\":284.59430979978924,\"height\":95.76396206533192}},{\"id\":1,\"position\":{\"x\":0,\"y\":480,\"width\":324,\"height\":120}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Contoso Camera Operations Analytics\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28px\"}}]}]}}]}}}",
+          "height": 95.76,
+          "width": 284.59,
+          "x": 1.35,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":186.1327713382508,\"z\":0,\"width\":202.31822971549,\"height\":155.11064278187564}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"AnalyzeCampaigns.Region\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Region\"},\"Name\":\"AnalyzeCampaigns.Region\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 155.11,
+          "width": 202.32,
+          "x": 0.00,
+          "y": 186.13,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":214.45732349841938,\"y\":427.56585879873546,\"z\":15,\"width\":343.940990516333,\"height\":279.1991570073762}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Parts Order Status\"},\"visualType\":\"hundredPercentStackedBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Product Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(WebsiteSocialAnalytics.Product Category)\"}],\"Series\":[{\"queryRef\":\"WebsiteSocialAnalytics.Status\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"},\"Name\":\"WebsiteSocialAnalytics.Product Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Product Category\"}},\"Function\":5},\"Name\":\"CountNonNull(WebsiteSocialAnalytics.Product Category)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Status\"},\"Name\":\"WebsiteSocialAnalytics.Status\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2cff61'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'Complete'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'In Progress'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ff4d4d'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Status\"}},\"Right\":{\"Literal\":{\"Value\":\"'Not Started'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 279.20,
+          "width": 343.94,
+          "x": 214.46,
+          "y": 427.57,
+          "z": 15.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":811,\"y\":2,\"z\":10,\"width\":181,\"height\":115.59902200488997}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Revenue\",\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Campaign Analytics.Marketing Cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Marketing Cost\"}},\"Function\":0},\"Name\":\"CountNonNull(Campaign Analytics.Marketing Cost)\"}]},\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 115.60,
+          "width": 181.00,
+          "x": 811.00,
+          "y": 2.00,
+          "z": 10.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":918.5247629083245,\"y\":427.56585879873546,\"z\":15,\"width\":358.7776606954689,\"height\":292.68703898840886}},{\"id\":1,\"position\":{\"x\":0,\"y\":300,\"width\":162,\"height\":180}}],\"singleVisual\":{\"title\":{\"background\":\"#000000\",\"show\":true,\"fontColor\":\"#FFFFFF\",\"text\":\"Users by Age Segment\"},\"visualType\":\"ChordChart1444757060245\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"},{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"}],\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Customer Segment\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Unique Visitors\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Unique Visitors)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Daily Users\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Daily Users)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Age Segment\"},\"Name\":\"WebsiteSocialAnalytics.Customer Segment\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#A66999'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WebsiteSocialAnalytics\"}},\"Property\":\"Device Category\"}},\"Right\":{\"Literal\":{\"Value\":\"'Desktop'\"}}}}}]}}]}}}",
+          "height": 292.69,
+          "width": 358.78,
+          "x": 918.52,
+          "y": 427.57,
+          "z": 15.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":563.7934668071654,\"y\":427.56585879873546,\"z\":14,\"width\":339.8946259220232,\"height\":283.245521601686}},{\"id\":1,\"position\":{\"x\":162,\"y\":300,\"width\":162,\"height\":180}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Customer Feedback\",\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\"},\"visualType\":\"WordCloud1447959067750\",\"projections\":{\"Category\":[{\"queryRef\":\"WebsiteSocialAnalytics.Hashtags\"}],\"Values\":[{\"queryRef\":\"Sum(WebsiteSocialAnalytics.Tweets)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WebsiteSocialAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Hashtags\"},\"Name\":\"WebsiteSocialAnalytics.Hashtags\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Tweets\"}},\"Function\":0},\"Name\":\"Sum(WebsiteSocialAnalytics.Tweets)\"}]},\"objects\":{}}}",
+          "height": 283.25,
+          "width": 339.89,
+          "x": 563.79,
+          "y": 427.57,
+          "z": 14.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":205.5158924205379,\"y\":132.64058679706602,\"z\":1,\"width\":336,\"height\":273}},{\"id\":1,\"position\":{\"x\":0,\"y\":120,\"width\":162,\"height\":180}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Customer Bulk Order Status\"},\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"Campaign Analytics.Campaign Tactic\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Campaign Analytics.Responses)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Campaign Tactic\"},\"Name\":\"Campaign Analytics.Campaign Tactic\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Responses\"}},\"Function\":0},\"Name\":\"Sum(Campaign Analytics.Responses)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Responses\"}},\"Function\":0}}}]},\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#24a9ff'\"}}}}},\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#71C1FF'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091FF'\"}}}}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 273.00,
+          "width": 336.00,
+          "x": 205.52,
+          "y": 132.64,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":636.4835164835165,\"y\":0.8791208791208791,\"z\":16,\"width\":157.36263736263737,\"height\":116.92307692307693}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\",\"show\":true,\"text\":\"Orders per Week\"},\"background\":{\"show\":true,\"color\":\"#b9e5f3\",\"transparency\":50},\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Campaign Analytics.PPS\"}],\"TrendLine\":[{\"queryRef\":\"Campaign Analytics.Qualification\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PPS\"},\"Name\":\"Campaign Analytics.PPS\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Qualification\"},\"Name\":\"Campaign Analytics.Qualification\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PPS\"}}}]},\"objects\":{}}}",
+          "filters": "[]",
+          "height": 116.92,
+          "width": 157.36,
+          "x": 636.48,
+          "y": 0.88,
+          "z": 16.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":292,\"y\":0,\"z\":4,\"width\":173,\"height\":116.28117359413204}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Total R&D Projects\",\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":true},\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Campaign Analytics.Campaign Name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campaign Name\"}},\"Function\":2},\"Name\":\"CountNonNull(Campaign Analytics.Campaign Name)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 116.28,
+          "width": 173.00,
+          "x": 292.00,
+          "y": 0.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":487.03296703296706,\"y\":0.8791208791208791,\"z\":16,\"width\":150.32967032967034,\"height\":116.04395604395604}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"alignment\":\"center\",\"text\":\"Sales Growth\"},\"background\":{\"show\":true,\"color\":\"#b9e5f3\",\"transparency\":50},\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Campaign Analytics.Network Utilization\"}],\"TrendLine\":[{\"queryRef\":\"Campaign Analytics.Region\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Network Utilization\"},\"Name\":\"Campaign Analytics.Network Utilization\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Region\"},\"Name\":\"Campaign Analytics.Region\"}]},\"objects\":{}}}",
+          "filters": "[]",
+          "height": 116.04,
+          "width": 150.33,
+          "x": 487.03,
+          "y": 0.88,
+          "z": 16.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1015,\"y\":1,\"z\":6,\"width\":236.1246943765281,\"height\":118.83863080684597}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"width\":216,\"height\":120}}],\"singleVisual\":{\"title\":{\"show\":true,\"fontColor\":\"#FFFFFF\",\"background\":\"#000000\",\"text\":\"Operational Spend vs Target\",\"alignment\":\"center\"},\"background\":{\"color\":\"#b9e5f3\",\"transparency\":50,\"show\":false},\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(AnalyzeCampaigns.Revenue)\"}],\"TargetValue\":[{\"queryRef\":\"Sum(Campaign Analytics.Revenue Target)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Revenue\"}},\"Function\":0},\"Name\":\"Sum(AnalyzeCampaigns.Revenue)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Revenue Target\"}},\"Function\":0},\"Name\":\"Sum(Campaign Analytics.Revenue Target)\"}]},\"objects\":{\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"calloutValue\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00B9D0'\"}}}}}}}],\"target\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]}}}",
+          "height": 118.84,
+          "width": 236.12,
+          "x": 1015.00,
+          "y": 1.00,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":936.059009483667,\"y\":130.83245521601685,\"z\":12,\"width\":322.3603793466807,\"height\":276.50158061116963}}],\"singleVisual\":{\"title\":{\"fontColor\":\"#FFFFFF\",\"show\":true,\"background\":\"#000000\",\"text\":\"Camera Applications\"},\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"AnalyzeCampaigns.Campaign Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Campaign Analytics.Revenue)\"}],\"Gradient\":[{\"queryRef\":\"Sum(Campaign Analytics.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Campaign Name\"},\"Name\":\"AnalyzeCampaigns.Campaign Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Revenue\"}},\"Function\":0},\"Name\":\"Sum(Campaign Analytics.Revenue)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Revenue\"}},\"Function\":0}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"defaultColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2a9dff'\"}}}}},\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#71C1FF'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0091ff'\"}}}}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"'11'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}}}}]}}}",
+          "height": 276.50,
+          "width": 322.36,
+          "x": 936.06,
+          "y": 130.83,
+          "z": 12.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":551.654373024236,\"y\":130.83245521601685,\"z\":15,\"width\":377.66069546891464,\"height\":287.29188619599574}}],\"singleVisual\":{\"title\":{\"text\":\"Sales by Country\",\"show\":true,\"background\":\"#000000\",\"fontColor\":\"#FFFFFF\"},\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"LocationAnalytics.Country\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(LocationAnalytics.Stores)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocationAnalytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Country\"},\"Name\":\"LocationAnalytics.Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Stores\"}},\"Function\":0},\"Name\":\"Sum(LocationAnalytics.Stores)\"}]},\"objects\":{\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'road'\"}}}}}],\"dataPoint\":[{\"properties\":{\"defaultCategoryColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}}},\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 287.29,
+          "width": 377.66,
+          "x": 551.65,
+          "y": 130.83,
+          "z": 15.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.3487881981032666,\"y\":397.8925184404636,\"z\":5,\"width\":194.22550052687038,\"height\":144.32033719704953}}],\"singleVisual\":{\"title\":{\"show\":true,\"text\":\"Best Customers\"},\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Campaign Analytics.Campaign Tactic\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Campaign Analytics\"}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Campaign Tactic\"},\"Name\":\"Campaign Analytics.Campaign Tactic\"}]},\"objects\":{\"general\":[{\"properties\":{}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 144.32,
+          "width": 194.23,
+          "x": 1.35,
+          "y": 397.89,
+          "z": 5.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

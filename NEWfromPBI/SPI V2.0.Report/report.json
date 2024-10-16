@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "3fc8f85abb83fad5fd64",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"f595f267fa5998e571e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":764.3250305700263,\"height\":445.9706192733547,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Issue tracker.Created.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"Issue tracker.Created.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"Issue tracker.Created.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Issue tracker.Created.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"Issue tracker.Issue\"},{\"queryRef\":\"Issue tracker.Status\"},{\"queryRef\":\"Issue tracker.Retention label Applied\"},{\"queryRef\":\"Issue tracker.Type\"},{\"queryRef\":\"Issue tracker.Modified.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"Issue tracker.Modified.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"Issue tracker.Modified.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Issue tracker.Modified.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Issue tracker\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Created\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Issue tracker.Created.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Created Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Created\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Issue tracker.Created.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Created Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Created\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Issue tracker.Created.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Created Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Created\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Issue tracker.Created.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Created Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Issue\"},\"Name\":\"Issue tracker.Issue\",\"NativeReferenceName\":\"Issue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Status\"},\"Name\":\"Issue tracker.Status\",\"NativeReferenceName\":\"Status\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Retention label Applied\"},\"Name\":\"Issue tracker.Retention label Applied\",\"NativeReferenceName\":\"Retention label Applied\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Type\"},\"Name\":\"Issue tracker.Type\",\"NativeReferenceName\":\"Type\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Modified\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Issue tracker.Modified.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Modified Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Modified\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Issue tracker.Modified.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Modified Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Modified\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Issue tracker.Modified.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Modified Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Modified\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Issue tracker.Modified.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Modified Day\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 445.97,
+          "width": 764.33,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

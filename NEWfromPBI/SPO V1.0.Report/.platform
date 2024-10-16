@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "SPO V1.0"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "27a3f32c-5ae7-4117-94ca-3300803225c3"
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Documents\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Documents",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "FileSystemObjectType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ee8460be-226a-4f5e-9b46-bb0fefea826b",
+            "sourceColumn": "FileSystemObjectType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "704e137a-b55e-4231-af02-808a576bca1a",
+            "sourceColumn": "Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ServerRedirectedEmbedUri",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c7070ccf-1219-417f-b168-6095dfbb45c0",
+            "sourceColumn": "ServerRedirectedEmbedUri",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ServerRedirectedEmbedUrl",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "09755981-3542-4e22-aa80-fff66d33e552",
+            "sourceColumn": "ServerRedirectedEmbedUrl",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ContentTypeId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7f6f327a-2c83-412b-8ae5-91f80e4146db",
+            "sourceColumn": "ContentTypeId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OData__ColorTag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "05c6e65b-8ff3-4854-946a-b177416da065",
+            "sourceColumn": "OData__ColorTag",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ComplianceAssetId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5a7c425e-60ca-48a9-8180-8be1a7a488da",
+            "sourceColumn": "ComplianceAssetId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "59c7a6d3-9b18-483f-8b3c-0d9b3dddd3fe",
+            "sourceColumn": "Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsMyDocuments",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0cbfda98-6fbf-4c92-aacc-ff02b1508537",
+            "sourceColumn": "IsMyDocuments",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SharedWithInternalId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d8f73487-e633-46b3-a59c-559ac74d9a9b",
+            "sourceColumn": "SharedWithInternalId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SharedWithInternalStringId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4276d553-7e77-4d26-a983-e638cde29ceb",
+            "sourceColumn": "SharedWithInternalStringId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OData__ip_UnifiedCompliancePolicyProperties",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7ba2ed86-5369-4072-a007-daf68e46a57b",
+            "sourceColumn": "OData__ip_UnifiedCompliancePolicyProperties",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30933417-3cc2-4671-8905-f6c19b19e544",
+            "sourceColumn": "ID.1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Created",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "182c90bd-cbb8-48c9-91e5-2aa322d329df",
+            "sourceColumn": "Created",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AuthorId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "53c0fb7e-a65d-462a-940f-b7b57ca86470",
+            "sourceColumn": "AuthorId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Modified",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4b848764-e459-4f37-8064-77bd1fd62dc1",
+            "sourceColumn": "Modified",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EditorId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ce52cfcd-a1d6-403b-8f00-f2df0dafcdce",
+            "sourceColumn": "EditorId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OData__CopySource",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d5fcb3dd-ebb8-46e5-b2c1-1acf5a8856a9",
+            "sourceColumn": "OData__CopySource",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CheckoutUserId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "776ac26a-212a-46bf-88e6-b5e7304d867f",
+            "sourceColumn": "CheckoutUserId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OData__UIVersionString",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "974102a7-931a-4b45-87e3-074178c59883",
+            "sourceColumn": "OData__UIVersionString",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GUID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f2011ee5-022d-4bd8-ad2a-3da51d7503ee",
+            "sourceColumn": "GUID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "acbf469a-e478-4e86-a234-551cff2da6ea",
+        "partitions": [
+          {
+            "name": "Documents",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = SharePoint.Tables(\"https://m365x33694874-my.sharepoint.com/personal/admin_m365x33694874_onmicrosoft_com/\", [Implementation=null, ApiVersion=15]),",
+                "    #\"8359cffc-cce7-41e7-a038-4a14faeac941\" = Source{[Id=\"8359cffc-cce7-41e7-a038-4a14faeac941\"]}[Items],",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"8359cffc-cce7-41e7-a038-4a14faeac941\",{{\"ID\", \"ID.1\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_c2f5c2ff-f473-4ec6-913b-333893c1f13f",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "a4522d0f-d262-4402-9756-d5fc2c5b218e",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "901226bb-6f68-4141-96d9-f57040d69535",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b043ad5b-4d07-490c-a1e0-29fbcb84263f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c355401a-5dad-4638-987e-ca54bcbd6b3d",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "69d5573d-c22c-4013-8da7-39147e569a84",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "439428fb-f7dc-4457-b6d1-ed1a08ccabf6",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0a02a679-9aa8-4f3b-80e5-41d08272c445",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "e716d586-7f5a-4b2b-b40b-d2e0a66949c3",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "1a520ca5-c7cd-4db3-989a-59f4398bc567",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "6b4cb05d-d3ca-4a6f-b03e-e28d8c0576a5",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "9b1e1428-cd97-4d63-968b-c51fef78a882",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "733f0944-c083-4ffd-b46c-016df1d5f4c8"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "f1cf4043-f9ce-4aaf-a9f8-c0682bcef57b",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_c2f5c2ff-f473-4ec6-913b-333893c1f13f",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

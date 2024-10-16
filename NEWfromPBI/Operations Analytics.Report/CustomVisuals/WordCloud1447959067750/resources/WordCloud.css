@@ -1,0 +1,8 @@
+.wordCloud {
+  font-family: Tahoma,Verdana,Geneva,sans-serif;
+}
+.wordCloud .words text {
+  text-anchor: middle;
+}
+
+.visual-icon.WordCloud1447959067750{ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVVJREFUeNrcU7tOwzAUbbqnP5AVITIi1K6E1my8UjYEVN1APEZgp0nFSMsOfEDbnaQ7DnudD4g/oMkHmCO5pIlpRMWEuIoi32Of63uObU0IUfptaH+MzDmnAY04l6lpmtsN8n1ZWcnjJO50HYvUvbGfgo7rWI0tFjKVLfJxdnG+c7AXRZGCP7++rFc3JmySBXNkzGHFNJ6KRfHY76FuIfne7eATxbFZt7KbzzRD4a69PxyNDu0mUhoE/MstaQQQDAghnu/nNA+GA3T75ntZhTd3t2mKsewInWNz/Odtg/lOabY9GCbLyRKpVcABQrmsVQJNsUEGQHBW1laPTo6VBSgBHL6Wi24PxCdJ8uB2g4+gfdrKThmGUavWGAsXt41AYekC9CuHhxQ7Y/+5YfiLJQIcqMBdwnh2t3FUvad+GIY/PgZd15u2fX15VdEr2n96z0vGpwADAPlJ40ZXLr8PAAAAAElFTkSuQmCC);}

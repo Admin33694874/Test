@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Consumer Website traffic"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e08ad950-95bf-47aa-8f5d-b3ca03e01621"
+  }
+}

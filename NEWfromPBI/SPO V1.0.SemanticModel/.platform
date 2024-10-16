@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SPO V1.0"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0ce48728-b662-42c2-b31f-e32f95fa701d"
+  }
+}

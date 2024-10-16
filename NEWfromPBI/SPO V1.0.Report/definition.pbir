@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../SPO V1.0.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
